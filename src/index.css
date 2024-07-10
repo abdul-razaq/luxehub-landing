@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+  font-family: "black";
+  src:local("sf-ui-display-black"),
+  url('./assets/fonts/sf-ui-display-black.woff') format("woff");
+}
+
+@font-face{
+  font-family: "bold";
+  src:local("sf-ui-display-bold"),
+  url('./assets/fonts/sf-ui-display-bold.woff') format("woff");
+}
+
+@font-face{
+  font-family: "heavy";
+  src:local("sf-ui-display-heavy"),
+  url('./assets/fonts/sf-ui-display-heavy.woff') format("woff");
+}
+
+@font-face{
+  font-family: "light";
+  src:local("sf-ui-display-light"),
+  url('./assets/fonts/sf-ui-display-light.woff') format("woff");
+}
+
+@font-face{
+  font-family: "medium";
+  src:local("sf-ui-display-medium"),
+  url('./assets/fonts/sf-ui-display-medium.woff') format("woff");
+}
+
+@font-face{
+  font-family: "semibold";
+  src:local("sf-ui-display-semibold"),
+  url('./assets/fonts/sf-ui-display-semibold.woff') format("woff");
+}
+
+@font-face{
+  font-family: "thin";
+  src:local("sf-ui-display-thin"),
+  url('./assets/fonts/sf-ui-display-thin.woff') format("woff");
+}
+
+@font-face{
+  font-family: "ultralight";
+  src:local("sf-ui-display-ultralight"),
+  url('./assets/fonts/sf-ui-display-ultralight.woff') format("woff");
+}
