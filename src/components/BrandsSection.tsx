@@ -1,4 +1,5 @@
 // import React from 'react';
+import Nike from '/public/assets/images/brands/nike.svg';
 
 export default function BrandsSection() {
 	return (
@@ -6,6 +7,12 @@ export default function BrandsSection() {
 			<h2 className="font-SpaceGrotesk uppercase tracking-tight text-lg md:text-2xl leading-normal">
 				Top brands on luxehub
 			</h2>
+
+			<div className="flex justify-center gap-2">
+				<div className="h-48 w-32">
+					<Nike />
+				</div>
+			</div>
 		</section>
 	);
 }

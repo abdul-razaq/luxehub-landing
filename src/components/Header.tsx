@@ -1,8 +1,8 @@
 import React from 'react';
-import Logo from '../assets/images/logo.png';
+import Logo from '/public/assets/images/logo.png';
 import { LuArrowUpRight } from 'react-icons/lu';
-import Apple from '../assets/images/apple.svg?react';
-import Google from '../assets/images/google.svg?react';
+import Apple from '/public/assets/images/apple.svg?react';
+import Google from '/public/assets/images/google.svg?react';
 import { useMediaQuery } from 'react-responsive';
 import { HambergerMenu } from 'iconsax-react';
 

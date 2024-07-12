@@ -20,9 +20,9 @@ export default {
 			},
 		},
 		backgroundImage: {
-			heroSvg: "url('./src/assets/images/hero.svg')",
-			heroPng: "url('./src/assets/images/hero.png')",
-			heroMobilePng: "url('./src/assets/images/hero-mobile.png')",
+			heroSvg: "url('/public/assets/images/hero.svg')",
+			heroPng: "url('/public/assets/images/hero.png')",
+			heroMobilePng: "url('/public/assets/images/hero-mobile.png')",
 		},
 		fontSize: Fonts.FontSize,
 	},
