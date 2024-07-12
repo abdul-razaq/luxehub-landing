@@ -1,5 +1,5 @@
 // import React from 'react';
-import Nike from '/public/assets/images/brands/nike.svg';
+// import Nike from '/assets/images/brands/nike.svg?react';
 
 export default function BrandsSection() {
 	return (
@@ -9,9 +9,7 @@ export default function BrandsSection() {
 			</h2>
 
 			<div className="flex justify-center gap-2">
-				<div className="h-48 w-32">
-					<Nike />
-				</div>
+				<div className="h-48 w-32">{/* <Nike /> */}</div>
 			</div>
 		</section>
 	);
