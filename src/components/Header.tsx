@@ -13,7 +13,7 @@ export default function Header() {
 
 	return (
 		<header
-			className={`w-screen h-screen bg-primary-100 ${isMobile ? 'bg-heroMobilePng' : 'bg-heroPng'} bg-top bg-no-repeat bg-origin-content bg-auto`}
+			className={`bg-primary-100 min-h-screen min-w-full ${isMobile ? 'bg-heroMobilePng' : 'bg-heroPng'} bg-top bg-no-repeat bg-origin-content bg-auto`}
 		>
 			<div className="flex justify-between items-center px-8 py-4">
 				<div className="bg-black inline-block py-1.5 px-5 rounded-full">
