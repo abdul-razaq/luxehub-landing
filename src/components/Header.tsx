@@ -7,12 +7,14 @@ import { useMediaQuery } from 'react-responsive';
 import { HambergerMenu } from 'iconsax-react';
 
 export default function Header() {
-	const isMobile = useMediaQuery({ maxDeviceWidth: 1024 });
+	const isMobile = useMediaQuery({ maxWidth: 900 });
 
 	const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
 	return (
-		<header className="w-screen h-screen bg-primary-100">
+		<header
+			className={`w-screen h-screen bg-primary-100 ${isMobile ? 'bg-heroMobilePng' : 'bg-heroPng'} bg-top bg-no-repeat bg-origin-content bg-auto`}
+		>
 			<div className="flex justify-between items-center px-8 py-4">
 				<div className="bg-black inline-block py-1.5 px-5 rounded-full">
 					<img src={Logo} alt="LuxeHub Logo" className="" width={80} />

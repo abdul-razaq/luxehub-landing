@@ -19,6 +19,11 @@ export default {
 				SpaceGrotesk: ['Space Grotesk', 'sans-serif'],
 			},
 		},
+		backgroundImage: {
+			heroSvg: "url('./src/assets/images/hero.svg')",
+			heroPng: "url('./src/assets/images/hero.png')",
+			heroMobilePng: "url('./src/assets/images/hero-mobile.png')",
+		},
 		fontSize: Fonts.FontSize,
 	},
 	plugins: [],
