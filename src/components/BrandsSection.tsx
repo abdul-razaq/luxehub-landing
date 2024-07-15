@@ -15,22 +15,22 @@ export default function BrandsSection() {
 			</h2>
 
 			<div className="flex flex-col md:flex-row justify-center items-center gap-4">
-				<Brand>
+				<Brand bgImage={'bg-nike'}>
 					<Nike width={'auto'} height={'auto'} />
 				</Brand>
-				<Brand>
+				<Brand bgImage={'bg-prada'}>
 					<Prada width={'auto'} height={'auto'} />
 				</Brand>
-				<Brand>
+				<Brand bgImage={'bg-givenchy'}>
 					<Givenchy width={'auto'} height={'auto'} />
 				</Brand>
-				<Brand>
+				<Brand bgImage={'bg-gucci'}>
 					<Gucci width={'auto'} height={'auto'} />
 				</Brand>
-				<Brand>
+				<Brand bgImage={'bg-tomFord'}>
 					<TomFord width={'auto'} height={'auto'} />
 				</Brand>
-				<Brand>
+				<Brand bgImage={'bg-versace'}>
 					<Versace width={'auto'} height={'auto'} />
 				</Brand>
 			</div>
@@ -38,11 +38,19 @@ export default function BrandsSection() {
 	);
 }
 
-function Brand({ children }: { children: React.ReactNode }) {
+function Brand({
+	bgImage,
+	children,
+}: {
+	bgImage: string;
+	children: React.ReactNode;
+}) {
 	return (
 		<div className="h-60 w-32 items-center justify-center flex border border-background-100 hover:w-80 hover:transition-all hover:duration-700 hover:ease-in-out group">
 			<div className="p-4 group-hover:hidden">{children}</div>
-			<div className="hidden group-hover:flex w-full h-full items-center justify-center">
+			<div
+				className={`hidden group-hover:flex w-full h-full items-center justify-center ${bgImage} bg-no-repeat bg-cover bg-center`}
+			>
 				<button className="flex items-center justify-center bg-white shadow-md px-6 py-2">
 					<p className="font-SFmedium text-md tracking-wide leading-normal uppercase">
 						Open
