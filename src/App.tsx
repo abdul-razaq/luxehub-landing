@@ -2,14 +2,14 @@
 
 import BrandsSection from './components/BrandsSection';
 import Header from './components/Header';
+import ShoppingSection from './components/ShoppingSection';
 
 function App() {
 	return (
 		<main>
 			<Header />
-			<section className="py-20 px-10">
-				<BrandsSection />
-			</section>
+			<BrandsSection />
+			<ShoppingSection />
 		</main>
 	);
 }

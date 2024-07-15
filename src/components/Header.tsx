@@ -13,15 +13,15 @@ export default function Header() {
 
 	return (
 		<header
-			className={`bg-primary-100 min-h-screen min-w-screen ${isMobile ? 'bg-heroMobilePng' : 'bg-heroPng'} bg-top bg-no-repeat bg-cover`}
+			className={`bg-primary-100 min-h-screen min-w-screen ${isMobile ? 'bg-heroMobilePng' : 'bg-heroPng'} bg-cover bg-no-repeat bg-top`}
 		>
-			<div className="flex justify-between items-center px-8 py-4">
+			<div className="flex justify-between items-center px-8 py-6 fixed w-full">
 				<div className="bg-black inline-block py-1.5 px-5 rounded-full">
 					<img src={Logo} alt="LuxeHub Logo" className="" width={80} />
 				</div>
 
 				{!isMobile && (
-					<div className="items-center bg-white flex gap-8 rounded-full font-SFsemibold py-2 px-6 text-xs md:text-sm uppercase text-textColor border border-background-900 tracking-tight">
+					<div className="items-center bg-white flex gap-8 rounded-full font-SFmedium py-4 px-8 text-xs md:text-md uppercase text-textColor border border-background-900 tracking-wide leading-normal">
 						<p className="text-primary-900">
 							<a href="">Home</a>
 						</p>
@@ -79,7 +79,7 @@ export default function Header() {
 			<div
 				className={`justify-center items-center flex-col flex text-center w-full ${isMobile && '-mt-8'}`}
 			>
-				<div className="font-SpaceGrotesk uppercase tracking-tighter text-lg md:text-4xl pt-10 leading-normal">
+				<div className="font-SpaceGrotesk uppercase tracking-tighter text-lg md:text-4xl pt-28 leading-normal">
 					<h1 className="">
 						COMFORTABLE {isMobile && <br />} LUXURY <br />
 						<span
