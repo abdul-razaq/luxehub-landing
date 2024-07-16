@@ -46,7 +46,7 @@ function Brand({
 	children: React.ReactNode;
 }) {
 	return (
-		<div className="h-60 w-32 items-center justify-center flex border border-background-100 hover:w-80 hover:transition-all hover:duration-700 hover:ease-in-out group">
+		<div className="h-80 w-44 items-center justify-center flex border border-background-100 hover:w-full md:hover:w-96 hover:transition-all hover:duration-700 hover:ease-in-out group">
 			<div className="p-4 group-hover:hidden">{children}</div>
 			<div
 				className={`hidden group-hover:flex w-full h-full items-center justify-center ${bgImage} bg-no-repeat bg-cover bg-center`}
