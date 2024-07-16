@@ -42,6 +42,8 @@ export default function BuyAndSellSection() {
 		setModeData(data[mode]);
 	}
 
+	console.log(modeData);
+
 	return (
 		<article className="pb-20 lg:px-24 md:px-10 flex flex-col items-center justify-center w-full">
 			<div className="bg-background-900 font-SpaceGrotesk font-bold tracking-wider leading-normal py-1.5 px-2 rounded-full flex items-center text-white">
@@ -74,6 +76,6 @@ export default function BuyAndSellSection() {
 	);
 }
 
-function BuyAndSellCard() {
-	return <div className="w-1/2 h-96 p-4 bg-primary-900"></div>;
-}
+// function BuyAndSellCard() {
+// 	return <div className="w-1/2 h-96 p-4 bg-primary-900"></div>;
+// }
