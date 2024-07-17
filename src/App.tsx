@@ -4,6 +4,7 @@ import BrandsSection from './components/BrandsSection';
 import BuyAndSellSection from './components/BuyAndSellSection';
 import Header from './components/Header';
 import ShoppingSection from './components/ShoppingSection';
+import WhyChooseUsSection from './components/WhyChooseUsSection';
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 			<BrandsSection />
 			<ShoppingSection />
 			<BuyAndSellSection />
+			<WhyChooseUsSection />
 		</main>
 	);
 }

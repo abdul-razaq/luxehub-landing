@@ -64,7 +64,7 @@ export default function BuyAndSellSection() {
 	}
 
 	return (
-		<article className="pb-20 lg:px-24 md:px-10 flex flex-col items-center justify-center w-full">
+		<article className="pb-5 lg:px-24 md:px-10 flex flex-col items-center justify-center w-full">
 			<div className="bg-background-900 font-SpaceGrotesk font-bold tracking-wider leading-normal py-1.5 px-2 rounded-full flex items-center text-white">
 				<button
 					className={`px-4 py-1.5 uppercase ${mode === 'buy' ? selectedClasses : ''} transition-all duration-300`}
