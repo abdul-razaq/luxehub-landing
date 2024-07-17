@@ -4,7 +4,7 @@ import { LuArrowUpRight } from 'react-icons/lu';
 import Apple from '/src/assets/svgs/apple.svg?react';
 import Google from '/src/assets/svgs/google.svg?react';
 import { useMediaQuery } from 'react-responsive';
-import { HambergerMenu } from 'iconsax-react';
+import { HambergerMenu, Messages2 } from 'iconsax-react';
 
 export default function Header() {
 	const isMobile = useMediaQuery({ maxWidth: 900 });
@@ -15,7 +15,7 @@ export default function Header() {
 		<header
 			className={`bg-primary-100 min-h-screen min-w-screen ${isMobile ? 'bg-heroMobilePng' : 'bg-heroPng'} bg-cover bg-no-repeat bg-top`}
 		>
-			<div className="flex justify-between items-center px-8 py-6 fixed w-full">
+			<div className="flex justify-between items-center px-6 py-6 pt-12 md:pt-4 fixed w-full">
 				<div className="bg-black inline-block py-1.5 px-5 rounded-full">
 					<img src={Logo} alt="LuxeHub Logo" className="" width={80} />
 				</div>
@@ -102,13 +102,31 @@ export default function Header() {
 					</Button>
 				</div>
 			</div>
+
+			<Button classes="flex items-center gap-2 rounded-full absolute right-36 bottom-52">
+				<Messages2 color="white" size={20} variant="Bold" />
+				<span className="text-white font-SFlight tracking-wide leading-normal text-md">
+					Support chat
+				</span>
+			</Button>
 		</header>
 	);
 }
 
-function Button({ children }: { children: React.ReactNode }) {
+function Button({
+	children,
+	classes,
+	onClick,
+}: {
+	children: React.ReactNode;
+	classes?: string;
+	onClick?: () => void;
+}) {
 	return (
-		<button className="bg-background-900 px-8 py-2 cursor-pointer">
+		<button
+			onClick={onClick}
+			className={`${classes} bg-background-900 px-8 py-2 cursor-pointer`}
+		>
 			{children}
 		</button>
 	);
