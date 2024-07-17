@@ -1,6 +1,6 @@
 export default function WhyChooseUsSection() {
 	return (
-		<section className="text-center p-2">
+		<section className="text-center p-2 md:max-w-1/2">
 			<h1 className="font-SpaceGrotesk font-semibold mb-2">Why Choose Us?</h1>
 			<p className="font-SFlight text-sm md:text-md leading-relaxed tracking-wide text-background-700 my-6 md:w-8/12 md:mx-auto">
 				LuxeHub offers a premium shopping experience with curated selections of

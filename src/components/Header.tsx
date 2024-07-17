@@ -4,7 +4,7 @@ import { LuArrowUpRight } from 'react-icons/lu';
 import Apple from '/src/assets/svgs/apple.svg?react';
 import Google from '/src/assets/svgs/google.svg?react';
 import { useMediaQuery } from 'react-responsive';
-import { HambergerMenu, Messages2 } from 'iconsax-react';
+import { HambergerMenu } from 'iconsax-react';
 
 export default function Header() {
 	const isMobile = useMediaQuery({ maxWidth: 900 });
@@ -102,18 +102,11 @@ export default function Header() {
 					</Button>
 				</div>
 			</div>
-
-			<Button classes="flex items-center gap-2 rounded-full absolute right-36 bottom-52">
-				<Messages2 color="white" size={20} variant="Bold" />
-				<span className="text-white font-SFlight tracking-wide leading-normal text-md">
-					Support chat
-				</span>
-			</Button>
 		</header>
 	);
 }
 
-function Button({
+export function Button({
 	children,
 	classes,
 	onClick,
