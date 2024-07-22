@@ -80,7 +80,7 @@ export default function BuyAndSellSection() {
 				</button>
 			</div>
 
-			<p className="font-SFmedium text-sm md:text-lg text-center tracking-wide leading-normal w-8/12 py-8">
+			<p className="font-SFmedium text-sm md:text-lg text-center tracking-wide leading-normal w-8/12 lg:w-6/12 py-8">
 				The Luxehub is an online marketplace that connects buyers and sellers of
 				luxury fashion items. With our app, you can explore, buy, and sell the
 				finest preloved luxury goods with ease.
@@ -93,7 +93,7 @@ export default function BuyAndSellSection() {
 
 function BuyAndSellCards({ data }: { data: any }) {
 	return (
-		<div className="flex flex-col md:flex-row gap-8 items-center justify-center w-full lg:px-44 py-6">
+		<div className="flex flex-col md:flex-row gap-8 items-center justify-center w-full lg:max-w-5xl py-6">
 			<BuyAndSellCard
 				icon={data.icons[0]}
 				title={data.titles[0]}
@@ -139,16 +139,16 @@ function BuyAndSellCard({
 }) {
 	return (
 		<div
-			className={`md:w-1/2 w-10/12 h-96 p-4 ${backgroundColor} flex flex-col justify-end relative`}
+			className={`md:w-1/2 w-10/12 md:h-96 h-80 p-4 ${backgroundColor} flex flex-col justify-end`}
 		>
 			<h1
-				className={`text-[8rem] md:text-[12rem] ${index === 1 ? 'text-primary-100' : index === 2 ? 'text-primary-300' : 'text-background-100'} absolute top-14 right-5 md:-top-10 md:right-4 font-SFmedium`}
+				className={`text-[7rem] md:text-[12rem] ${index === 1 ? 'text-primary-100' : index === 2 ? 'text-primary-300' : 'text-background-100'} font-SFmedium md:translate-y-40 md:translate-x-44`}
 			>
 				{index}
 			</h1>
 			<div className="pl-4">{icon}</div>
 			<div
-				className={`${accentColor} p-4 font-SFthin text-sm leading-normal tracking-wider text-white mt-5 min-h-52`}
+				className={`${accentColor} p-4 font-SFthin text-sm leading-normal tracking-wider text-white mt-5 md:min-h-52 h-48`}
 			>
 				<h2 className="text-2xl pb-4 font-SFsemibold">{title}</h2>
 				<p>{description}</p>
