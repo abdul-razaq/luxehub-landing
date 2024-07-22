@@ -9,6 +9,7 @@ import WhyChooseUsSection from './components/WhyChooseUsSection';
 import GetIntoTheHubSection from './components/GetIntoTheHubSection';
 import { useMediaQuery } from 'react-responsive';
 import FaqsSection from './components/FaqsSection';
+import FooterSection from './components/FooterSection';
 
 function App() {
 	const isMobile = useMediaQuery({ minWidth: 900 });
@@ -22,6 +23,7 @@ function App() {
 			<WhyChooseUsSection />
 			<GetIntoTheHubSection />
 			<FaqsSection />
+			<FooterSection />
 
 			<Button classes="flex items-center gap-2 rounded-full fixed bottom-10 right-10">
 				<Messages2 color="white" size={20} variant="Bold" />
