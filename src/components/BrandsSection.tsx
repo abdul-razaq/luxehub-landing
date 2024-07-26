@@ -6,7 +6,6 @@ import TomFord from '../assets/svgs/brands/tom-ford.svg?react';
 import Versace from '../assets/svgs/brands/versace.svg?react';
 
 import { RiArrowRightUpLine } from 'react-icons/ri';
-import 'react-horizontal-scrolling-menu/dist/styles.css';
 
 export default function BrandsSection() {
 	return (
