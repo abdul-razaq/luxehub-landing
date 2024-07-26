@@ -80,7 +80,7 @@ export default function BuyAndSellSection() {
 				</button>
 			</div>
 
-			<p className="font-SFmedium text-sm md:text-lg text-center tracking-wide leading-normal w-8/12 lg:w-6/12 py-8">
+			<p className="font-SFmedium text-sm md:text-lg text-center tracking-wide leading-normal w-10/12 lg:w-6/12 py-8">
 				The Luxehub is an online marketplace that connects buyers and sellers of
 				luxury fashion items. With our app, you can explore, buy, and sell the
 				finest preloved luxury goods with ease.
@@ -142,7 +142,7 @@ function BuyAndSellCard({
 			className={`md:w-1/2 w-10/12 md:h-96 h-80 p-4 ${backgroundColor} flex flex-col justify-end`}
 		>
 			<h1
-				className={`text-[7rem] md:text-[12rem] ${index === 1 ? 'text-primary-100' : index === 2 ? 'text-primary-300' : 'text-background-100'} font-SFmedium md:translate-y-40 md:translate-x-44`}
+				className={`text-[8rem] md:text-[12rem] ${index === 1 ? 'text-primary-100' : index === 2 ? 'text-primary-300' : 'text-background-100'} font-SFmedium md:translate-y-40 md:translate-x-44 translate-y-36 translate-x-52 bg-clip-text w-0 z-30`}
 			>
 				{index}
 			</h1>

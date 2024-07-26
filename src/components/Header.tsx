@@ -13,7 +13,7 @@ export default function Header() {
 
 	return (
 		<header
-			className={`bg-primary-100 min-h-screen min-w-screen ${isMobile ? 'bg-heroMobilePng' : 'bg-heroPng'} bg-cover bg-no-repeat bg-top`}
+			className={`bg-primary-100 min-h-screen min-w-screen ${isMobile ? 'bg-heroMobilePng' : 'bg-heroPng'} bg-center-top bg-no-repeat bg-top`}
 		>
 			<div className="flex justify-between items-center px-6 py-6 pt-12 md:pt-4 fixed w-full">
 				<div className="bg-black inline-block py-1.5 px-5 rounded-full">
@@ -79,7 +79,7 @@ export default function Header() {
 			<div
 				className={`justify-center items-center flex-col flex text-center w-full ${isMobile && '-mt-8'}`}
 			>
-				<div className="font-SpaceGrotesk uppercase tracking-tighter text-lg md:text-4xl pt-28 leading-normal">
+				<div className="font-SpaceGrotesk uppercase tracking-tighter text-2xl md:text-4xl pt-24 leading-normal">
 					<h1 className="">
 						COMFORTABLE {isMobile && <br />} LUXURY <br />
 						<span
@@ -89,16 +89,16 @@ export default function Header() {
 						</span>
 					</h1>
 				</div>
-				<p className="w-8/12 md:w-5/12 lg:w-3/12 xl:2/12 text-center text-xs md:text-md font-thin pt-2 italic">
+				<p className="w-10/12 md:w-5/12 lg:w-3/12 xl:2/12 text-center text-sm md:text-md font-thin pt-2 italic">
 					We help luxury items find their new homes. Some luxury items are
 					waiting for your own home!
 				</p>
-				<div className="flex flex-row gap-2 items-center justify-center text-white py-5">
+				<div className="flex flex-row gap-2 items-center justify-center text-white py-2">
 					<Button>
-						<Apple height={isMobile ? 20 : 30} width={'auto'} />
+						<Apple height={isMobile ? 15 : 30} width={'auto'} />
 					</Button>
 					<Button>
-						<Google height={isMobile ? 20 : 30} width={'auto'} />
+						<Google height={isMobile ? 15 : 30} width={'auto'} />
 					</Button>
 				</div>
 			</div>

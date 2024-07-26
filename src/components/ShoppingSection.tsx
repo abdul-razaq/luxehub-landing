@@ -4,7 +4,7 @@ import { FaArrowRightLong } from 'react-icons/fa6';
 export default function ShoppingSection() {
 	return (
 		<article className="lg:max-w-5xl lg:mx-auto">
-			<section className="pb-20 py-28">
+			<section className="pb-20">
 				<div className="flex justify-between px-8 lg:px-0 mb-10">
 					<h2 className="font-SpaceGrotesk uppercase tracking-tight text-lg md:text-xl leading-normal">
 						Shop Men's Wear

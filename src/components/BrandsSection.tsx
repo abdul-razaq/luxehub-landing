@@ -6,15 +6,16 @@ import TomFord from '../assets/svgs/brands/tom-ford.svg?react';
 import Versace from '../assets/svgs/brands/versace.svg?react';
 
 import { RiArrowRightUpLine } from 'react-icons/ri';
+import 'react-horizontal-scrolling-menu/dist/styles.css';
 
 export default function BrandsSection() {
 	return (
-		<section className="text-center">
-			<h2 className="font-SpaceGrotesk uppercase tracking-tight text-lg md:text-2xl leading-normal pb-6 pt-16">
+		<section className="text-center w-full py-16 md:py-28">
+			<h2 className="font-SpaceGrotesk uppercase tracking-tight text-lg md:text-2xl leading-normal">
 				Top brands on luxehub
 			</h2>
 
-			<div className="flex flex-col md:flex-row justify-center items-center gap-4">
+			<div className="items-center md:justify-center flex flex-row p-6 gap-4 md:gap-6 whitespace-nowrap overflow-x-scroll overflow-y-hidden md:whitespace-normal md:overflow-hidden no-scrollbar md:pt-16 pt-10">
 				<Brand bgImage={'bg-nike'}>
 					<Nike width={'auto'} height={'auto'} />
 				</Brand>
@@ -46,7 +47,7 @@ function Brand({
 	children: React.ReactNode;
 }) {
 	return (
-		<div className="h-80 w-44 items-center justify-center flex border border-background-100 hover:w-full md:hover:w-96 hover:transition-all hover:duration-700 hover:ease-in-out group">
+		<div className="md:h-80 md:w-44 h-56 min-w-32 items-center justify-center flex border border-background-100 hover:w-full md:hover:w-96 hover:transition-all hover:duration-700 hover:ease-in-out group">
 			<div className="p-4 group-hover:hidden">{children}</div>
 			<div
 				className={`hidden group-hover:flex w-full h-full items-center justify-center ${bgImage} bg-no-repeat bg-cover bg-center`}
