@@ -17,7 +17,7 @@ export default function GetIntoTheHubSection() {
 					<FaGooglePlay size={20} />
 				</button>
 			</div>
-			<img src="/public/assets/images/phone.png" alt="phone" />
+			<img src="/assets/images/phone.png" alt="phone" />
 		</section>
 	);
 }
